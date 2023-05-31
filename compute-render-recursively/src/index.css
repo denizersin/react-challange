@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.component {
+  position: relative;
+  border: 1px solid red;
+  padding: 3px;
+  margin: 3px;
+}
+
+.component>span:nth-child(1) {
+  position: absolute;
+  font-size: 10px;
+  left: 0px;
+  top: -8px;
+  /* display:none; */
+}
+
+
+input {
+  border: 1px solid black;
+}
+
+.btn {
+  @apply w-max  bg-gray-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl;
+}
